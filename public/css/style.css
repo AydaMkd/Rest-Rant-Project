@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color:purple;
+  } 
+h2 {
+    color:purple;
+    margin-left: 400px;
+  } 
+img {
+width: 350px;
+height:350px;
+margin-left: 350px;
+margin-right: 50px;
+} 
+
+button{
+    background-color:pink;
+}
+
+body{
+    background-color: plum;
+}
+
+p{
+    font-weight: bolder;
+    margin-left: 400px;
+    color: purple;
+}
+
+*{
+background-color: plum;
+}
