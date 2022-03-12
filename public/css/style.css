@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     color:purple;
   } 
-h2 {
+h2,h3,h4,h5 {
     color:purple;
     margin-left: 400px;
   } 
@@ -29,4 +29,28 @@ p{
 
 *{
 background-color: plum;
+}
+nav {
+  background-color: purple;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
 }
