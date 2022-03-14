@@ -13,6 +13,12 @@ const placeSchema = new mongoose.Schema({
   },
   comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 })
+placeSchema.virtual("places", {
+    ref: "Place",
+    localField: "_id",
+    foreignField: "place"
+  })
+
 placeSchema.methods.showEstablished = function() {
   return `${this.name} has been serving ${this.city}, ${this.state} since ${this.founded}.`
 }

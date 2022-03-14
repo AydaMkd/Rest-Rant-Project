@@ -5,7 +5,13 @@ let commentSchema = new mongoose.Schema({
     rant: { type: Boolean, default: false },
     stars: { type: Number, required: true },
     content: { type: String, default: '' }
+   
 })
-  
+commentSchema.virtual("comments",{
+    ref: "Comment",
+    localField:"_id",
+    foreignField: "comments"
+}
+)
 const Comment = mongoose.model('Comment', commentSchema)
 module.exports= Comment
