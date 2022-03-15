@@ -68,19 +68,19 @@ if(place.comments.length) {
     
        <form method="POST" action={`/places/${place.id}/comment`}>
   <div className="form-group">
-      <label htmlFor="name">Content</label>
+      <label htmlFor="content">Content</label>
       <input 
+        id="author" 
+        name="author" 
         className="form-control" 
-        id="name" 
-        name="name" 
-        value=""
+       
       required />
       <label htmlFor="name">Author</label>
       <input 
-        className="form-control" 
-        id="name" 
-        name="name" 
-        value=""
+         
+        id="stars" 
+        name="stars" 
+        className="form-control"
       required />
       <h5>Star Rating</h5>
 
