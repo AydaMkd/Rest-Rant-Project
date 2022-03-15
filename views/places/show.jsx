@@ -70,16 +70,16 @@ if(place.comments.length) {
   <div className="form-group">
       <label htmlFor="content">Content</label>
       <input 
-        id="author" 
-        name="author" 
+        id="content" 
+        name="content" 
         className="form-control" 
        
       required />
       <label htmlFor="name">Author</label>
       <input 
          
-        id="stars" 
-        name="stars" 
+        id="author" 
+        name="author" 
         className="form-control"
       required />
       <h5>Star Rating</h5>
