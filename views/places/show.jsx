@@ -66,7 +66,7 @@ if(place.comments.length) {
        </form>  
        </div>  
     
-       <form method="POST" action={`places/${place.id}?_method=POST`}>
+       <form method="POST" action={`/places/${place.id}/comment`}>
   <div className="form-group">
       <label htmlFor="name">Content</label>
       <input 
@@ -87,18 +87,11 @@ if(place.comments.length) {
       <input type="submit" value="Submit"></input>
   </div>
 </form>
-
        
         </Def>
     )
 
-
-    
-     
- 
- 
 }
 
 
 module.exports = show
-
