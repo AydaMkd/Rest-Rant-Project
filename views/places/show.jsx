@@ -84,7 +84,13 @@ function show ({place}) {
           </div>
           <hr />
           <h2>Got Your Own Rant or Rave?</h2>
+
           <form action={`/places/${place.id}/comment`} method="POST">
+          <div className="form-group col-sm-2">
+                  <label htmlFor="rant">Rant?</label>
+                  <input type="checkbox" id="rant" name="rant" className="form-control" />
+                </div>
+              
             <div className="row">
               <div className="form-group col-sm-12">
                 <label htmlFor="content">Content</label>
